@@ -4,50 +4,50 @@
 	<meta charset="UTF-8">
 	<title>jQuery.Categories</title>
 
-	<link rel="stylesheet" href="css/style.css">
-	
-	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>	
-	<script src="js/jquery.categories.js"></script>
+	<link rel="stylesheet" href="css/style.css">	
 </head>
 <body>	
 	<div class="container">
 		<ul class="categories">
-			<li class="selected"><a href="#">All</a></li>
-			<li><a href="#">Apples</a></li>
-			<li><a href="#">Oranges</a></li>
-			<li><a href="#">Bananas</a></li>
+			<li><a href="#" data-category="*">All</a></li>
+			<li><a href="#" data-category="apples">Apples</a></li>
+			<li><a href="#" data-category="oranges">Oranges</a></li>
+			<li><a href="#" data-category="bananas">Bananas</a></li>
 		</ul>
 
 		<div class="items">
-			<div class="apple">
+			<div class="apples">
 				<img src="img/apple1.jpg">
 				<p>Apple 1</p>
 			</div>
-			<div class="apple">
+			<div class="apples">
 				<img src="img/apple2.jpg">
 				<p>Apple 2</p>
 			</div>
-			<div class="apple">
+			<div class="apples">
 				<img src="img/apple3.jpg">
 				<p>Apple 3</p>
 			</div>
-			<div class="orange">
+			<div class="oranges">
 				<img src="img/orange1.jpg">
 				<p>Orange 1</p>
 			</div>
-			<div class="orange">
+			<div class="oranges">
 				<img src="img/orange2.jpg">
 				<p>Orange 2</p>
 			</div>
-			<div class="banana">
+			<div class="bananas">
 				<img src="img/banana1.jpg">
 				<p>Banana 1</p>
 			</div>
-			<div class="banana">
+			<div class="bananas">
 				<img src="img/banana2.jpg">
 				<p>Banana 2</p>
 			</div>
 		</div>		
 	</div>
+
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>	
+	<script src="js/jquery.categories.js"></script>
 </body>
 </html>

@@ -7,9 +7,13 @@
 
  	var $container = $('.items');
 
- 	$container.isotope({
- 		itemSelector: '.item'
- 	});
+ 	// we use imagesLoaded here so that all images are downloaded 
+ 	// before isotope makes any width/height calculations.
+ 	$container.imagesLoaded( function(){
+	 	$container.isotope({
+	 		itemSelector: '.item'
+	 	});
+	});
 
 	$('.categories li a').click(function() {
 		var category = $(this).data('category');
@@ -19,5 +23,4 @@
 		$('.categories li a').parent().removeClass('selected');
 		$(this).parent().addClass('selected');		
 	});
-		
  });

@@ -17,14 +17,15 @@ body {
 .categories { width: 100%; height: 28px; list-style: none; margin: 10px 0; padding: 0; }
 .categories li { float: left; margin: 0 3px; height: 28px; }
 .categories li a { 
-	background: #ddd; color: #333; text-decoration: none;
+	background: #eee; color: #333; text-decoration: none;
+	border: 1px solid #ddd;
 	padding: 3px 8px; line-height: 28px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-.categories li a:hover { background: #ccc; color: #444; }
-.categories li.selected a { background: #F38630; }
+.categories li a:hover { background: #ddd; color: #444; }
+.categories li.selected a { background: #F38630; border: 1px solid #FA6900; }
 .categories li.selected a:hover { background: #FA6900; }
 .categories:after { content: ''; display: block; clear: both; } /* clearfix */
 

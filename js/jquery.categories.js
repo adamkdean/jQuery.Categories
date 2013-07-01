@@ -15,8 +15,6 @@
 	 	});
 	});
 
- 	$container.isotope({ filter: "*" });
-
 	$('.categories li a').click(function() {
 		var category = $(this).data('category');
 		category = (category == '*') ? category : '.' + category;
